@@ -6,10 +6,11 @@ public class tommaso_di_benedetto
 
 	public static void main(String[] args)
 	{
+		System.out.println("primo esercizio");
 		System.out.println("inserisci la grandezza dell'arrey, deve corrispondere ad un valore pari:");
 		int n = in.nextInt();
 		double[] array1 = new double[n];
-		System.out.print("il ptimo array:");
+		System.out.print("il primo array:");
 		System.out.println();
 		for (int i = 0; i < array1.length; i++)
 		{
@@ -30,5 +31,33 @@ public class tommaso_di_benedetto
 			b += 2;
 			System.out.println("|" + array2[i] + "|");
 		}
+		es2 ();
+	}
+	public static void es2 ()
+	{
+		System.out.println("secondo esercizio");
+		String[] array1 = new String[5];
+		for (int i = 0; i < 5; i++)
+		{
+			System.out.println("inserisci una stringa:");
+			array1 [i] = in.nextLine();
+			System.out.println("|" + array1[i] + "|");
+		}
+		String[] array2 = new String[5];
+		for (int i = 0; i < 5; i++)
+		{
+			System.out.println("inserisci una stringa:");
+			array2 [i] = in.nextLine();
+			System.out.println("|" + array2[i] + "|");
+		}
+		for (int i = 0; i < 5; i++)
+		{
+			array1[i].equals(array2[i]);
+			if (array1[i].equals(array2 [i]))
+				System.out.println("ok");
+			else
+			System.out.println("no");
+		}
+			
 	}
 }
