@@ -39,17 +39,25 @@ public class tommaso_di_benedetto
 		String[] array1 = new String[5];
 		for (int i = 0; i < 5; i++)
 		{
-			System.out.println("inserisci una stringa:");
+			System.out.println("inserisci una stringa 1:");
 			array1 [i] = in.nextLine();
-			System.out.println("|" + array1[i] + "|");
 		}
-		String[] array2 = new String[5];
 		for (int i = 0; i < 5; i++)
 		{
-			System.out.println("inserisci una stringa:");
-			array2 [i] = in.nextLine();
-			System.out.println("|" + array2[i] + "|");
+			System.out.println("|" + array1[i] + "|");
 		}
+//-------------------------------------------------------		
+		String[] array2 = new String[5];
+		for (int j = 0; j < 5; j++)
+		{
+			System.out.println("inserisci una stringa 2:");
+			array2 [j] = in.nextLine();
+		}
+		for (int j = 0; j < 5; j++)
+		{
+			System.out.println("|" + array2[j] + "|");
+		}
+//-------------------------------------------------------
 		for (int i = 0; i < 5; i++)
 		{
 			array1[i].equals(array2[i]);
